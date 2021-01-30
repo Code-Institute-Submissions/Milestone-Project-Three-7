@@ -9,38 +9,79 @@
     <link rel="stylesheet" href="/static/css/style.css" type="text/css">
     <title>Title of my Project</title>
 </head>
-<body>
+<body class="black">
     <!-- Navbar -->
     <header>
-        <nav>
+        <nav class="black">
             <div class="nav-wrapper container">
-                <a href="#!" class="brand-logo">Logo</a>
+                <div class="my-nav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#" class="logo">KaR</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Sign Up</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
 
     <main>
-        <div class="col-container">
-            <div class="col1 light-blue center">
-                <ul>
-                    <li><a>Button</a></li>
-                    <li><a>Button</a></li>
-                    <li><a>Button</a></li>
-                </ul>
-            </div>
+        <section class="container">
+                <div class="my-section">
+                    <h2 class="white-text">Keep A Record</h2>
+                </div>
+        </section>
         
-            <div class="col2 blue-grey lighten-5 center">
+        <section class="container">
                 {% block content %}
-                    <h3>Page Content</h3>
-                    <h4>More content</h4>
-                    <h5>Even more content</h5>
-                    <h5>Some content here</h5>
+                    <div class="row">
+                        <div class="col s12 l4">
+                            <div class="card black">
+                                <div class="card-content white-text">
+                                    <span class="card-title">Title</span>
+                                    <h6>On Netflix</h6>
+                                    <p>Here's a comment about it</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="#">This is a link</a>
+                                    <a href="#">This is a link</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 l4">
+                            <div class="card black">
+                                <div class="card-content white-text">
+                                    <span class="card-title">Title</span>
+                                    <h6>On Amazon</h6>
+                                    <p>Here's a comment about it</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="#">This is a link</a>
+                                    <a href="#">This is a link</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 l4">
+                            <div class="card black">
+                                <div class="card-content white-text">
+                                    <span class="card-title">Title</span>
+                                    <h6>On Disney</h6>
+                                    <p>Here's a comment about it</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="#">This is a link</a>
+                                    <a href="#">This is a link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 {% endblock %}
-            </div>
-        </div>
+        </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer black">
         <div class="container">
             <div class="row">
                 <div class="col s6">
@@ -59,7 +100,7 @@
                 </div>
             </div>
         </div>
-        <div class="footer-copyright">
+        <div class="footer-copyright black">
             <div class="container">
                 © 2014 Copyright Text
                 <a class="grey-text text-lighten-4 right" href="#!">More Links</a>

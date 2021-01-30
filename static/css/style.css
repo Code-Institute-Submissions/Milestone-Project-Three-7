@@ -1,15 +1,26 @@
-/* Make main section column equal height regardless of content */
-/* code adapted from https://www.w3schools.com/howto/howto_css_equal_height.asp */
-.col-container {
-    display: flex;
-    width: 100%;
-}
-.col1 {
-    flex: 1;
+.logo {
+    font-size: xx-large;
 }
 
-.col2 {
-    flex: 4;
+.my-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.my-section {
+    display: flex;
+    justify-content: center;
+    padding: 200px 0px 200px 0px;
+}
+
+.row {
+    padding: 0;
+    margin: 0;
+}
+
+.card {
+    border: 2px solid white;
+    margin-bottom: 150px;
 }
 
 a {
