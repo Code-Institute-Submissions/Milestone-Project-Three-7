@@ -7,30 +7,20 @@
     justify-content: center;
 }
 
-.my-section {
+.my-section-1 {
     display: flex;
     justify-content: center;
     padding: 200px 0px 200px 0px;
 }
 
-.row {
-    padding: 0;
-    margin: 0;
+.my-section-2 {
+    padding-bottom: 150px;
 }
 
 .card {
     border: 2px solid white;
-    margin-bottom: 150px;
 }
 
 a {
     color: white;
-}
-
-/* Responsive layout - makes a one column layout instead of a two-column layout */
-/* code adapted from https://www.w3schools.com/css/css3_flexbox_responsive.asp */
-@media (max-width: 800px) {
-  .col-container {
-    flex-direction: column;
-  }
 }
