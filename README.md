@@ -1,1 +1,44 @@
-# Milestone-Project-Three
+# Milestone-Project-Three - 
+
+## Description
+
+## Links
+
+### Deployment
+
+The game has been deployed using Heroku, and is available to view [here](-------Fill in link------------)
+
+### Wireframes
+
+## User Design/Experience
+
+## User Stories
+
+## Features
+
+## Testing
+
+### Testing using online tools
+
+### Manual Testing
+
+## Issues and Bugs
+
+## Scalability
+
+## Technologies
+
+### Languages and Technologies Used
+
+- HTML
+- CSS
+- Python
+- Flask
+- MongoDB
+
+
+### Tools Used
+
+## Acknowledgements
+
+I'd like to acknowledge my mentor, Felipe Souza Alarcon, for his support throughout this project.
