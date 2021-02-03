@@ -21,6 +21,20 @@ def hello():
     return render_template('home.html')
 
 
+@app.route('/home')
+def home():
+    return render_template('home.html')
+
+
+@app.route('/login')
+def login():
+    return render_template('login.html')
+
+@app.route('/my_list')
+def my_list():
+    return render_template('my_list.html')
+
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')),
