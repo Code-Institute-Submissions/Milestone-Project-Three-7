@@ -10,7 +10,12 @@
 .my-section-1 {
     display: flex;
     justify-content: center;
-    padding: 200px 0px 200px 0px;
+    padding: 200px 0px 100px 0px;
+}
+
+.my-para {
+    padding: 0px 50px 100px 50px;
+    font-size: large;
 }
 
 .my-section-2 {
