@@ -17,11 +17,15 @@
             <div class="nav-wrapper container">
                 <div class="my-nav">
                     <ul>
-                        <li><a href="{{ url_for('home') }}">Home</a></li>
-                        <li><a href="{{ url_for('home') }}">About</a></li>
-                        <li><a href="{{ url_for('home') }}" class="logo">KaR</a></li>
-                        <li><a href="{{ url_for('login') }}">Log In</a></li>
-                        <li><a href="{{ url_for('my_list') }}">My List</a></li>
+                        {% if session.user %}
+                            <li><a href="{{ url_for('my_list') }}">My List</a></li>
+                            <li><a href="{{ url_for('home') }}" class="logo">KaR</a></li>
+                            <li><a href="{{ url_for('logout') }}">Log Out</a></li>
+                        {% else %}
+                            <li><a href="{{ url_for('home') }}">Home</a></li>
+                            <li><a href="{{ url_for('home') }}" class="logo">KaR</a></li>
+                            <li><a href="{{ url_for('login') }}">Log In</a></li>
+                        {% endif %}
                     </ul>
                 </div>
             </div>

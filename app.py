@@ -47,7 +47,7 @@ def register():
         # putting the new user into session cookie
         session['user'] = request.form.get('username').lower()
         flash('Registration Successful')
-        # return redirect(url_for('profile', username=session['user']))
+        return redirect(url_for('my_list', username=session['user']))
 
     return render_template('register.html')
 
@@ -66,8 +66,8 @@ def login():
                     session['user'] = request.form.get('username').lower()
                     flash('Welcome, {}'.format(
                         request.form.get('username')))
-                    # return redirect(url_for(
-                    #     'profile', username=session['user']))
+                    return redirect(url_for(
+                        'my_list', username=session['user']))
             else:
                 # invalid password match
                 flash('Incorrect Username and/or Password')
@@ -82,8 +82,22 @@ def login():
 
 @app.route('/my_list')
 def my_list():
+    #grab the session user's username from the database
+    username = mongo.db.users.find_one(
+        {'username': session['user']})['username']
     entry = mongo.db.entries.find()
-    return render_template('my_list.html', entries=entry)
+
+    if session['user']:
+        return render_template('my_list.html', username=username, entries=entry)
+
+    return redirect(url_for('login'))
+
+@app.route('/logout')
+def logout():
+    #remove user session from cookies
+    flash('You have been logged out')
+    session.pop('user')
+    return redirect(url_for('login'))
 
 
 if __name__ == '__main__':
