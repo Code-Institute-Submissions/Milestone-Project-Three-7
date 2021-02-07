@@ -30,9 +30,11 @@ def home():
 def login():
     return render_template('login.html')
 
+
 @app.route('/my_list')
 def my_list():
-    return render_template('my_list.html')
+    entry = mongo.db.entries.find()
+    return render_template('my_list.html', entries=entry)
 
 
 if __name__ == '__main__':
