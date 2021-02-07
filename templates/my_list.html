@@ -6,7 +6,7 @@
             <h2 class="white-text center-align">{{ username }}'s List</h2>
         </div>
         <div class="center">
-            <button class="btn">Add To List</button>
+            <a href="{{ url_for('add_task') }}" class="btn">Add to List</a>
         </div>
     </section>
         
@@ -16,9 +16,9 @@
                 <div class="col s12 l4">
                     <div class="card black">
                         <div class="card-content white-text">
-                            <span class="card-title">{{ entry.programme_name }}</span>
-                            <h6>{{ entry.streaming_service }}</h6>
-                            <p>{{ entry.comment }}</p>
+                            <span class="card-title">Title: {{ entry.programme_name }}</span>
+                            <h6>Service: {{ entry.streaming_service }}</h6>
+                            <p>Comment: {{ entry.comment }}</p>
                             <p>Rating: {{ entry.rating }}</p>
                             <p class="stars"><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i>
                             </p>

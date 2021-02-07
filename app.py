@@ -18,16 +18,12 @@ mongo = PyMongo(app)
 
 
 @app.route('/')
-def hello():
-    return render_template('home.html')
-
-
 @app.route('/home')
 def home():
     return render_template('home.html')
 
 
-@app.route('/about', methods=['GET', 'POST'])
+@app.route('/register', methods=['GET', 'POST'])
 def register():
     if request.method == 'POST':
         # Check if username already exists in db
@@ -80,6 +76,14 @@ def login():
     return render_template('login.html')
 
 
+@app.route('/logout')
+def logout():
+    #remove user session from cookies
+    flash('You have been logged out')
+    session.pop('user')
+    return redirect(url_for('login'))
+
+
 @app.route('/my_list')
 def my_list():
     #grab the session user's username from the database
@@ -92,12 +96,10 @@ def my_list():
 
     return redirect(url_for('login'))
 
-@app.route('/logout')
-def logout():
-    #remove user session from cookies
-    flash('You have been logged out')
-    session.pop('user')
-    return redirect(url_for('login'))
+
+@app.route('/add_task')
+def add_task():
+    return render_template('add_task.html')
 
 
 if __name__ == '__main__':
