@@ -97,9 +97,21 @@ def my_list():
     return redirect(url_for('login'))
 
 
-@app.route('/add_task')
-def add_task():
-    return render_template('add_task.html')
+@app.route('/add_entry', methods=['GET', 'POST'])
+def add_entry():
+    if request.method == 'POST':
+        entry = {
+            'programme_name': request.form.get('programme_name'),
+            'streaming_service': request.form.get('streaming_service'),
+            'comment': request.form.get('comment'),
+            'rating': request.form.get('rating'),
+            'created_by': session['user']
+        }
+        mongo.db.entries.insert_one(entry)
+        flash('Task Successfully Added')
+        return redirect(url_for('my_list'))
+    
+    return render_template('add_entry.html')
 
 
 if __name__ == '__main__':
