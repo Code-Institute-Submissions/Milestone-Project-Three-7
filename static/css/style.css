@@ -20,7 +20,7 @@ main {
 .my-section-1 {
     display: flex;
     justify-content: center;
-    padding: 200px 0px 100px 0px;
+    padding: 150px 0px 100px 0px;
 }
 
 .my-para {
@@ -46,4 +46,9 @@ p i {
 
 .stars {
     padding: 10px 0px 10px 0px;
+}
+
+.flashes,
+.flashes h4 {
+    margin: 0;
 }
