@@ -108,10 +108,35 @@ def add_entry():
             'created_by': session['user']
         }
         mongo.db.entries.insert_one(entry)
-        flash('Task Successfully Added')
+        flash('Entry Successfully Added')
         return redirect(url_for('my_list'))
     
     return render_template('add_entry.html')
+
+
+@app.route('/edit_entry/<entry_id>', methods=['GET', 'POST'])
+def edit_entry(entry_id):
+    if request.method == 'POST':
+        submit = {
+            'programme_name': request.form.get('programme_name'),
+            'streaming_service': request.form.get('streaming_service'),
+            'comment': request.form.get('comment'),
+            'rating': request.form.get('rating'),
+            'created_by': session['user']
+        }
+        mongo.db.entries.update({'_id': ObjectId(entry_id)}, submit)
+        flash('Entry Successfully Updated')
+        return redirect(url_for('my_list'))
+
+    entry = mongo.db.entries.find_one({'_id': ObjectId(entry_id)})
+    return render_template('edit_entry.html', entry=entry)
+
+
+@app.route('/delete_entry/<entry_id>')
+def delete_entry(entry_id):
+    mongo.db.entries.remove({'_id': ObjectId(entry_id)})
+    flash('Entry Successfully Deleted')
+    return redirect(url_for('my_list'))
 
 
 if __name__ == '__main__':
