@@ -22,15 +22,19 @@
                                 <h6>Service: {{ entry.streaming_service }}</h6>
                                 <p>Comment: {{ entry.comment }}</p>
                                 <p>Rating: {{ entry.rating }}</p>
-                                {% if {{ entry.rating }} == 5 %}
+                                {% set rating = entry.rating %}
+                                {{ entry.rating }}
+                                {{ rating }}
+                                {% if rating == 5 %}
                                     <p class="stars"><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i></p>
-                                {% elif {{ entry.rating }} == 4 %}
+                                {% elif rating == 4 %}
                                     <p class="stars"><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i></p>
-                                {% elif {{ entry.rating }} == 3 %}
+                                {% elif rating == 3 %}
                                     <p class="stars"><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i></p>
-                                {% elif {{ entry.rating }} == 2 %}
+                                {% elif rating == 2 %}
                                     <p class="stars"><i class="material-icons">star</i><i class="material-icons">star</i></p>
                                 {% else %}
+                                {{ rating }}
                                     <p class="stars"><i class="material-icons">star</i></p>
                                 {% endif %}
                                 <a href="{{ url_for ('edit_entry', entry_id=entry._id) }}" class="btn white black-text">Edit</a>
