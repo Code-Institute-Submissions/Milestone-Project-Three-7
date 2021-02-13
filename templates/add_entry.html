@@ -13,7 +13,7 @@
                 <div class="input-field col s12">
                     <i class="material-icons prefix white-text">mode_edit</i>
                     <input id="programme_name" name="programme_name" minlength="5" maxlength="50"
-                        type="text" class="validate white-text" required>
+                        pattern="^[a-zA-Z0-9]{2,15}$" type="text" class="validate white-text" required>
                     <label for="programme_name">Title</label>
                 </div>
             </div>
@@ -22,7 +22,7 @@
                 <div class="input-field col s12">
                     <i class="material-icons prefix white-text">live_tv</i>
                     <input id="streaming_service" name="streaming_service" minlength="1" maxlength="50"
-                        type="text" class="validate white-text" required>
+                        pattern="^[a-zA-Z0-9]{2,15}$" type="text" class="validate white-text" required>
                     <label for="streaming_service">Streaming Service</label>
                 </div>
             </div>
