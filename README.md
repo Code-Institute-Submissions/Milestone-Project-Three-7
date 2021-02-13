@@ -26,13 +26,30 @@ This goal was broken down into User Stories
 #### Navigation bar at the top of the page
 
 - This contains:
-1. a logo which can route the user to the homepage,
-2. a home button which is the main navigation to the home page,
-3. a login button which directs the user to the login page to view their own content.
+  1. a logo which can route the user to the homepage,
+  2. a home button which is the main navigation to the home page,
+  3. a login button which directs the user to the login page to view their own content.
 - Once logged in the navbar contains:
-1. a My List button which directs the user to their list of entries into the database,
-2. a logout button once they are finished using the website,
-3. a logo which will route them to the homepage
+  1. a My List button which directs the user to their list of entries into the database,
+  2. a logout button once they are finished using the website,
+  3. a logo which will route them to the homepage
+  
+#### Account Creation
+
+- Once the user navigates to the login page they will also find a link to create and account should they not already have one.
+- To create and account the user has to fill in the username and password fields as follows:
+  1. Their username must be between 5 and 15 characters and the field will accept all letter and number characters both lower and uppercase.
+  2. Their password must also be between 5 and 15 characters and this field will also accept all letter and number characters both lower and uppercase.
+  
+#### Login Ability
+
+- Once the user has a registered account they can log into the site to either start creating entries into their list or view previous entries they have made.
+- The user can log out of their session at anytime with the logout button.
+- 
+
+#### Create new entries
+
+- Once logged in the user has the ability to create entries into their list using the Add to List button on the My List page.
 
 
 ## Links
