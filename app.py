@@ -23,6 +23,16 @@ def home():
     return render_template('home.html')
 
 
+@app.errorhandler(404)
+def not_found_error(error):
+    return render_template('404.html'), 404
+
+
+@app.errorhandler(500)
+def internal_error(error):
+    return render_template('500.html'), 500
+
+
 @app.route('/register', methods=['GET', 'POST'])
 def register():
     if request.method == 'POST':
@@ -33,7 +43,7 @@ def register():
         if existing_user:
             flash('Username already exists')
             return redirect(url_for('register'))
-        
+
         register = {
             'username': request.form.get('username').lower(),
             'password': generate_password_hash(request.form.get('password'))
@@ -78,7 +88,7 @@ def login():
 
 @app.route('/logout')
 def logout():
-    #remove user session from cookies
+    # remove user session from cookies
     flash('You have been logged out')
     session.pop('user')
     return redirect(url_for('login'))
@@ -86,7 +96,7 @@ def logout():
 
 @app.route('/my_list')
 def my_list():
-    #grab the session user's username from the database
+    # grab the session user's username from the database
     username = mongo.db.users.find_one(
         {'username': session['user']})['username']
     entry = mongo.db.entries.find()
@@ -142,4 +152,4 @@ def delete_entry(entry_id):
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')),
-            debug=True)
+            debug=False)
