@@ -1,20 +1,18 @@
-# Milestone-Project-Three - 
+# Milestone-Project-Three - Keep A Record
 
 ## Description
 
-## Links
-
-### Deployment
-
-The project has been deployed using Heroku, and is available to view [here](https://milestone-project-three-shaun.herokuapp.com/)
-
-### Wireframes
+Keep a record allows users to build a list of the programs and movies they have watched on they're favourite streaming services, rate them and write comments or a review a review. Never forget what you have watched on Netflix again!
 
 ## User Design/Experience
 
 ## User Stories
 
 ## Features
+
+## Links
+
+### Wireframes
 
 ## Testing
 
@@ -36,8 +34,15 @@ The project has been deployed using Heroku, and is available to view [here](http
 - Flask
 - MongoDB
 
-
 ### Tools Used
+
+## Deployment
+
+The project has been deployed using Heroku, and is available to view [here](https://milestone-project-three-shaun.herokuapp.com/)
+
+### Heroku Deployment
+
+### Local Deployment
 
 ## Acknowledgements
 
