@@ -14,6 +14,10 @@ Keep a record allows users to build a list of the programs and movies they have 
 
 ### Wireframes
 
+The basic layout of the website was planned to be the same across all pages with a navbar and footer with content between as shown:
+
+![Welcome Page](https://github.com/ShaunWard/Milestone-Project-Three/blob/master/static/img/Login%20Page.png?raw=true)
+
 ## Testing
 
 ### Testing using online tools
