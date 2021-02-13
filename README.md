@@ -11,15 +11,29 @@ This goal was broken down into User Stories
 
 ### User Stories
 
-- As a user I want to, have an easy way to keep track of things that I have watched.
+- As a user I want to, have an easy way to keep track of things that I have watched and view them easily.
 - As a user I want to, easily find my way around the site.
 - As a user I want to, be able to sign up and log in to the site to save my list for future reference.
 - As a user I want to, add detail to my list items such as the name, where I watched it, details/a review about it and to give it a rating.
 - As a user I want to, be able to edit entries to current list items if I want to change the name, streaming service, review or rating of it.
 - As a user I want to, I want to be able to delete entries in the list that I no longer want in it.
-
+- As a user I want to, use the webstie on my smartphone or tablet, not just on a desktop.
 
 ## Features
+
+### Features currently on the site:
+
+#### Navigation bar at the top of the page
+
+- This contains:
+1. a logo which can route the user to the homepage,
+2. a home button which is the main navigation to the home page,
+3. a login button which directs the user to the login page to view their own content.
+- Once logged in the navbar contains:
+1. a My List button which directs the user to their list of entries into the database,
+2. a logout button once they are finished using the website,
+3. a logo which will route them to the homepage
+
 
 ## Links
 
