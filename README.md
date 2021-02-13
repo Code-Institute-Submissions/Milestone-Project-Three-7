@@ -50,6 +50,28 @@ This goal was broken down into User Stories
 #### Create new entries
 
 - Once logged in the user has the ability to create entries into their list using the Add to List button on the My List page.
+- To add an entry the following fields must be filled in:
+  1. Title, this field is the title of the programme/film watched and can be between 2 and 50 characters long using letters and numbers.
+  2. Streaming Service, this field is the service used to view the content watched such as Netflix or nowTV etc. This field will accept between 2 and 15 characters using letters and numbers.
+  3. Review/Notes, this field can take between 5 and 250 characters for the user to right a review or some notes on what they have watched using letters or numbers.
+  4. Rating, this field is to rate the programme/film out of 5 and will accept entires of numbers 1,2,3,4 & 5.
+- All sections are required to be filled in to put an entry into the users list.
+- Once completed the entry can be added to the users list by clicking the Add to List button at the bottom of the form.
+
+#### Viewing entries
+
+- Once added to the list, entries will be available to view on the My List page
+- Entries will the listed 3 at a time horizontally across the page before staring a new line of 3.
+- Entries will be listed in the order they were put into the system, this includes after editing an entry.
+
+#### Edit and Delete functionality
+
+- The user can edit an entry of the list by clicking on the edit button of that entry.
+- The user will then be taken to the edit page which will contain the 4 fields they filled in to create the entry, Title, Streaming Service, Review/Notes and Rating.
+- These fields will be populated on the edit screen by the current data in that entry.
+- This current data can be added to or changed
+- Once edited the entry can be saved to the list by clicking the Complete Edit button at the bottom of the form.
+
 
 
 ## Links
