@@ -6,7 +6,7 @@
 
 ### Deployment
 
-The game has been deployed using Heroku, and is available to view [here](-------Fill in link------------)
+The project has been deployed using Heroku, and is available to view [here](https://milestone-project-three-shaun.herokuapp.com/)
 
 ### Wireframes
 
