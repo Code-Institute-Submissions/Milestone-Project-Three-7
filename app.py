@@ -23,6 +23,9 @@ def home():
     return render_template('home.html')
 
 
+# Error handling code for most common errors 404, 500
+# Discussion had with Mentor about how to include error handling
+# Code adapted from https://www.askpython.com/python-modules/flask/flask-error-handling
 @app.errorhandler(404)
 def not_found_error(error):
     return render_template('404.html'), 404
@@ -36,7 +39,7 @@ def internal_error(error):
 @app.route('/register', methods=['GET', 'POST'])
 def register():
     if request.method == 'POST':
-        # Check if username already exists in db
+        # Check if username already exists in database
         existing_user = mongo.db.users.find_one(
             {'username': request.form.get('username').lower()})
 
