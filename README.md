@@ -72,6 +72,18 @@ This goal was broken down into User Stories
 - This current data can be added to or changed
 - Once edited the entry can be saved to the list by clicking the Complete Edit button at the bottom of the form.
 
+#### Security
+
+- When the user creates a password it is hashed using a the systems security key, this means that the password created will never appear in the database.
+
+### Features left to implement
+
+- An ability for one user to share their entry with another using to suggest a programme/film.
+- A page containing data about the entries such as:
+  1. numbers of entries against a certain streaming service
+  2. a quick view of all the ratings given, and an average rating
+- Using an API it may also be possible to suggest programmes/films to the user based on their entries.
+
 
 
 ## Links
@@ -98,15 +110,28 @@ The other pages of the website followed the same theme and structure and can be 
 
 ## Technologies
 
-### Languages and Technologies Used
+### Languages/Technologies/Tools Used
+
+#### Languages
 
 - HTML
 - CSS
 - Python
-- Flask
-- MongoDB
 
-### Tools Used
+#### Frameworks
+
+- [Materialize](https://materializecss.com) - for the layout and components
+- Flask
+- [Jinja](https://jinja.palletsprojects.com/en/2.11.x/) Templating Language
+
+#### Technologies/Tools
+
+- [MongoDB](https://www.mongodb.com/) as a database for the inputted data
+- [Heroku](https://www.heroku.com) to deploy the application
+- [Gitpod IDE](https://www.gitpod.io)
+- Git & [Github](https://github.com/) for version control
+- [Balsamiq](https://balsamiq.com/) to create wireframes
+- [Am I Responsive](http://ami.responsivedesign.is/#)
 
 ## Deployment
 
