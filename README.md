@@ -139,7 +139,36 @@ The project has been deployed using Heroku, and is available to view [here](http
 
 ### Heroku Deployment
 
+
+
 ### Local Deployment
+
+To deploy locally:
+
+1. Go to the applications [repository](https://github.com/ShaunWard/Milestone-Project-Three) on github.
+2. Click on the 'code' button to access the dropdown and click 'download zip'.
+3. Unzip the downloaded file and open into your development environment.
+4. Start by installing the required systems listed in the requirements.txt file using
+  ```
+  pip3 install -r requirements.txt.
+  ```
+5. Next create a Cluster on MongoDB, in this cluster create a database.
+6. Within this database create two collections called 'entries' and 'users'.
+7. Back in your IDE create an env.py file and the same level as the app.py file, this should contain the following information:
+  ```
+  import os
+  os.environ.setdefault('IP', '0.0.0.0')
+  os.environ.setdefault('PORT', '5000')
+  os.environ.setdefault('SECRET_KEY', 'YOUR_KEY')
+  os.environ.setdefault('MONGO_URI', 'YOUR_MONGO_URI')
+  os.environ.setdefault('MONGO_DBNAME', 'YOUR_DATABASE')
+  ```
+8. You will be required to fill in the SECRET_KEY with a key of your choice, MONGO_URI (which can be found under your cluster with the 'connect' button) and MONGO_DBNAME with your own information from MongoDB
+9. Run the app.py file in your terminal by using the command:
+  ```
+  python3 app.py
+  ```
+Please note that if you wish to then push this project to a public repository such as your github then you must create a .gitignore file and make sure you add the env.py file into this to stop your valuable inforamtion being pushed.
 
 ## Acknowledgements
 
