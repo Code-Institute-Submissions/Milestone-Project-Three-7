@@ -25,7 +25,8 @@ def home():
 
 # Error handling code for most common errors 404, 500
 # Discussion had with Mentor about how to include error handling
-# Code adapted from https://www.askpython.com/python-modules/flask/flask-error-handling
+# Code adapted from
+# https://www.askpython.com/python-modules/flask/flask-error-handling
 @app.errorhandler(404)
 def not_found_error(error):
     return render_template('404.html'), 404
@@ -36,14 +37,15 @@ def internal_error(error):
     return render_template('500.html'), 500
 
 
-@app.route("/search", methods = ['GET', 'POST'])
+@app.route("/search", methods=['GET', 'POST'])
 def search():
     search = request.form.get('search')
     username = mongo.db.users.find_one(
         {'username': session['user']})['username']
     entry = mongo.db.entries.find({'$text': {"$search": search}})
     if session['user']:
-        return render_template('my_list.html', username=username, entries=entry)
+        return render_template(
+            'my_list.html', username=username, entries=entry)
     return redirect(url_for('login'))
 
 
@@ -116,7 +118,8 @@ def my_list():
     entry = mongo.db.entries.find()
 
     if session['user']:
-        return render_template('my_list.html', username=username, entries=entry)
+        return render_template(
+            'my_list.html', username=username, entries=entry)
 
     return redirect(url_for('login'))
 
