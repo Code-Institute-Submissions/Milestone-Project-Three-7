@@ -1,13 +1,4 @@
 # Milestone-Project-Three - Keep A Record
-
--[Keep A Record](#keep-a-record)
-  -[Description](#description)
-  -[User Design/Experience](#user-design/experience)
-    -[Design](#design)
-    -[User Stories](#user-stories)
-  -[Features](#features)
-    -[Features currently on the site](#features-currently-on-the-site)
-    -[Navigation bar](#navigation-bar)
     
 ## Description
 
