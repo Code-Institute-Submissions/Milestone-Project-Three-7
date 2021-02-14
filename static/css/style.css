@@ -52,3 +52,9 @@ p i {
 .flashes h4 {
     margin: 0;
 }
+
+.rating {
+    font-size: large;
+    color: gold;
+    padding: 10px 0px 10px 0px;
+}
