@@ -12,8 +12,9 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="material-icons prefix white-text">mode_edit</i>
-                    <input id="programme_name" name="programme_name" minlength="2" maxlength="50"
-                        pattern="^[a-zA-Z0-9]{2,50}$" type="text" class="validate white-text" value="{{ entry.programme_name }}" required>
+                    <input id="programme_name" name="programme_name" minlength="1" maxlength="50"
+                        pattern="^[a-zA-Z0-9\s]{1,50}$" type="text" class="validate white-text"
+                        title="Please input only letters or numbers. Max Length 50 characters" value="{{ entry.programme_name }}" required>
                     <label for="programme_name">Title</label>
                 </div>
             </div>
@@ -22,7 +23,8 @@
                 <div class="input-field col s12">
                     <i class="material-icons prefix white-text">live_tv</i>
                     <input id="streaming_service" name="streaming_service" minlength="1" maxlength="15"
-                        pattern="^[a-zA-Z0-9]{1,15}$" type="text" class="validate white-text" value="{{ entry.streaming_service }}" required>
+                        pattern="^[a-zA-Z0-9\s]{1,15}$" type="text" class="validate white-text"
+                        title="Please input only letters or numbers. Max length 15 characters" value="{{ entry.streaming_service }}" required>
                     <label for="streaming_service">Streaming Service</label>
                 </div>
             </div>
@@ -31,7 +33,7 @@
                 <div class="input-field col s12">
                     <i class="material-icons prefix white-text">format_align_left</i>
                     <textarea id="comment" name="comment" minlength="1"
-                        maxlength="250" class="validate white-text" required>
+                        maxlength="250" class="validate white-text" title="Max length 250 characters" required>
                     {{- entry.comment -}}
                     </textarea>
                     <label for="comment">Review/Notes</label>
@@ -43,7 +45,7 @@
                     <i class="material-icons prefix white-text">star</i>
                     <input id="rating" name="rating" minlength="1" maxlength="1"
                         type="text" pattern="^[1-5]{1}$" class="validate white-text"
-                        value="{{ entry.rating }}" required>
+                        title="Please input only numbers 1-5" value="{{ entry.rating }}" required>
                     <label for="rating">Rating 1-5</label>
                 </div>
             </div>
