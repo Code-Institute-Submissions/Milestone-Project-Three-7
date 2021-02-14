@@ -46,7 +46,6 @@ This goal was broken down into User Stories
 
 - Once the user has a registered account they can log into the site to either start creating entries into their list or view previous entries they have made.
 - The user can log out of their session at anytime with the logout button.
-- 
 
 #### Create new entries
 
@@ -158,6 +157,8 @@ Further manual testing was done to ensure each aspect of the application worked 
 - Add to list button take the user to the add to list page
 - If there are entries on the page, the edit button when clicked takes the user to the edit page.
 - If there are entries on the page, the delete button when clicked deleted the entry from the page.
+- If there are entries on the page and the search box is used, the entries relating to the search are displayed only.
+- If there are entires and the reset search button is pressed, all entries are now shown.
 
 #### Add to list Page
 
@@ -174,12 +175,44 @@ Further manual testing was done to ensure each aspect of the application worked 
 
 #### Edit page
 
--
+- When accessing the edit page the user is asked to edit what they have watched.
+- The form on the page is complete with the information from the entry the edit button was clicked on as expected.
+- The title field accepts 1-50 letters or numbers and spaces as expected.
+- If any other character is entered in the title field the user is prompted to use only letters and numbers.
+- The Streaming service field accepts 1-15 letters or numbers and spaces as expected.
+- If any other character is entered in the streaming service field the user is prompted to use only letters and numbers.
+- The Review/notes field accepts 1-250 characters as expected.
+- The rating field only accepts numbers 1-5 as expected.
+- If anything other than the numbers 1-5 is entered into rating the user is prompted.
+- If any field is left blank the user is prompted to fill in the field
+- The complete edit button takes the user back to the my list page and displays the edited entry.
 
+#### Testing user stories
 
-## Issues and Bugs
+- As a user I want to, have an easy way to keep track of things that I have watched and view them easily.
+  - The user is displayed with a list of their entries into the application when they are logged in as tested above.
+  
+- As a user I want to, easily find my way around the site.
+  - All buttons and froms were tested as above which should easily guide the user around the site
+  
+- As a user I want to, be able to sign up and log in to the site to save my list for future reference.
+  - Covered by the register and login functionality tested on the register and login pages.
+  
+- As a user I want to, add detail to my list items such as the name, where I watched it, details/a review about it and to give it a rating.
+  - This ability is given to the user and has been tested on the add item page.
+  
+- As a user I want to, be able to search for list items based on their name and where I watched it.
+  - This functionality is given to the user through the search function on the my list page and has been tested above.
+  
+- As a user I want to, be able to edit entries to current list items if I want to change the name, streaming service, review or rating of it.
+  - The user is able to do this with the edit function on every entry which was tested above.
 
-## Scalability
+- As a user I want to, I want to be able to delete entries in the list that I no longer want in it.
+  - The user is able to delete entries with the delete button as tested above.
+
+- As a user I want to, use the webstie on my smartphone or tablet, not just on a desktop.
+  - The site has been tested on various screen sizes from smartphones to desktop screens to ensure maximum responsiveness.
+
 
 ## Technologies
 
