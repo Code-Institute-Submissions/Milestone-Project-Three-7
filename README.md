@@ -218,6 +218,11 @@ Further manual testing was done to ensure each aspect of the application worked 
 - As a user I want to, use the webstie on my smartphone or tablet, not just on a desktop.
   - The site has been tested on various screen sizes from smartphones to desktop screens to ensure maximum responsiveness.
 
+### Online testing tools
+
+- [HTML Validator](https://validator.w3.org/) has been used to validate the HTML.
+- [CSS Validator](https://jigsaw.w3.org/css-validator/)
+- [Pep8](http://pep8online.com/) to check code for PEP8 requirements
 
 ## Technologies
 
