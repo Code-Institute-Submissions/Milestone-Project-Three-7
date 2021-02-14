@@ -9,6 +9,11 @@ Keep a record is a site that allows users to sign up, log in and build a list of
 The goal of this project was to give users the ability to keep track of what they had watched on an easy to use platform. They could not only remind themselves of what they had watched and where it was available to watch, but also write a self review possibly saying what they liked and if they would watch it again. 
 This goal was broken down into User Stories
 
+### Design
+
+The design of the application was kept relatively simple with an entirely black background and white text. This was to make the application look straight forward and not intimidating and help concentrate the user on the functionality. There are also very few buttons on the site to make it difficult for the user to go wrong, and these are easily identifiable by being white on the black background.
+The one other color used in the application was gold in an effort to make the site slightly less monotone in areas such as to display the rating for an entry.
+
 ### User Stories
 
 - As a user I want to, have an easy way to keep track of things that I have watched and view them easily.
