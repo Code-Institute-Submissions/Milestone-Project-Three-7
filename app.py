@@ -1,3 +1,7 @@
+# Code used in this
+# file is adapted from
+# Mini Project | Putting it all together
+
 import os
 from flask import (
     Flask, session, render_template, redirect, url_for, request, flash)
@@ -52,7 +56,7 @@ def search():
 @app.route('/register', methods=['GET', 'POST'])
 def register():
     if request.method == 'POST':
-        # Check if username already exists in database
+        # Checks if username already exists in database
         existing_user = mongo.db.users.find_one(
             {'username': request.form.get('username').lower()})
 
@@ -66,7 +70,7 @@ def register():
         }
         mongo.db.users.insert_one(register)
 
-        # putting the new user into session cookie
+        # Puts the new user into session cookie
         session['user'] = request.form.get('username').lower()
         flash('Registration Successful')
         return redirect(url_for('my_list', username=session['user']))
@@ -77,7 +81,7 @@ def register():
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
-        # check if username exists in db
+        # checks for username in the database
         existing_user = mongo.db.users.find_one(
             {'username': request.form.get('username').lower()})
         
@@ -91,11 +95,11 @@ def login():
                     return redirect(url_for(
                         'my_list', username=session['user']))
             else:
-                # invalid password match
+                # if there's an invalid password match
                 flash('Incorrect Username and/or Password')
                 return redirect(url_for('login'))
         else:
-            # username doesn't exist
+            # if username doesn't exist
             flash('Incorrect Username and/or Password')
             return redirect(url_for('login'))
             
@@ -104,7 +108,7 @@ def login():
 
 @app.route('/logout')
 def logout():
-    # remove user session from cookies
+    # This removes user session from cookies
     flash('You have been logged out')
     session.pop('user')
     return redirect(url_for('login'))
@@ -112,7 +116,7 @@ def logout():
 
 @app.route('/my_list')
 def my_list():
-    # grab the session user's username from the database
+    # Get the session user's username from the database
     username = mongo.db.users.find_one(
         {'username': session['user']})['username']
     entry = mongo.db.entries.find()
