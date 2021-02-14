@@ -15,6 +15,7 @@ This goal was broken down into User Stories
 - As a user I want to, easily find my way around the site.
 - As a user I want to, be able to sign up and log in to the site to save my list for future reference.
 - As a user I want to, add detail to my list items such as the name, where I watched it, details/a review about it and to give it a rating.
+- As a user I want to, be able to search for list items based on their name and where I watched it.
 - As a user I want to, be able to edit entries to current list items if I want to change the name, streaming service, review or rating of it.
 - As a user I want to, I want to be able to delete entries in the list that I no longer want in it.
 - As a user I want to, use the webstie on my smartphone or tablet, not just on a desktop.
@@ -64,6 +65,13 @@ This goal was broken down into User Stories
 - Entries will the listed 3 at a time horizontally across the page before staring a new line of 3.
 - Entries will be listed in the order they were put into the system, this includes after editing an entry.
 
+#### Search for entries
+
+- Provided above the list on the My List page is a search input field
+- This field can be used by the user to find all entries that contain the search criteria
+- When the search functionality is in use only the entries containing the search criteria will be shown in the list
+- The search criteria can be removed by clicking the reset search button, this takes the user back to the entire list of entries.
+
 #### Edit and Delete functionality
 
 - The user can edit an entry of the list by clicking on the edit button of that entry.
@@ -84,8 +92,6 @@ This goal was broken down into User Stories
   2. a quick view of all the ratings given, and an average rating
 - Using an API it may also be possible to suggest programmes/films to the user based on their entries.
 
-
-
 ## Links
 
 ### Wireframes
@@ -100,9 +106,9 @@ The other pages of the website followed the same theme and structure and can be 
 
 ## Testing
 
-### Testing using online tools
-
 ### Manual Testing
+
+
 
 ## Issues and Bugs
 
