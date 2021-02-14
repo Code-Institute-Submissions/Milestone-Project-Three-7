@@ -146,7 +146,7 @@ To deploy locally:
 3. Unzip the downloaded file and open into your development environment.
 4. Start by installing the required systems listed in the requirements.txt file using
   ```
-  pip3 install -r requirements.txt.
+  pip3 install -r requirements.txt
   ```
 5. Next create a Cluster on MongoDB, in this cluster create a database.
 6. Within this database create two collections called 'entries' and 'users'.
