@@ -121,18 +121,60 @@ Further manual testing was done to ensure each aspect of the application worked 
 - Loaded from the heroku link https://milestone-project-three-shaun.herokuapp.com/
 - Home page appears as expected, the user is presented with:
   - A Navbar with home button, KaR logo and Log in button
-  - The title of the application
-  - A brief description of the reccommended use of the site
-  - Some examples of what the user can expect from their list
-This page focuses on having an easy to understand site from the start which would tie in with the user story of easily find my way round the site.
+- Logo when clikced sends the user back to the home page as required.
+- Home when clicked sends the user back to the home page as required.
+- Login send the user to the login page
+
+#### Login Page
+
+- User is presented with input fields for username and password.
+- If user is not registered and enters a username and password and clicks log in the page reloads and 'Incorrect Username and/or Password' flashes to the screen.
+- If the user enters a username or password into the form and leaves a field blank and clicks log in they are prompted to fill in the empty field.
+- Username field prompts the user if username is under 5 characters.
+- Username field does not allow input of over 15 characters.
+- Password field prompts the user if password is under 5 characters.
+- Password field does not allow input of over 15 characters.
+- Both Username and password fields prompt the user to only use letters or numbers if any other characters are entered.
 
 #### Register Page
 
-- From the home page the user can go to the log in page.
-- On this log in page the user is asked for a username and pasword
-- Below this is a prompt to Get An Account should the user not already have one, clicking this button with take the user to the register page.
-- 
+- If the user cannot log in becuase they are not registered they can access the register page from the bottom of the login page by clikcing on get account.
+- If the user enters a username or password into the form and leaves a field blank and clicks log in they are prompted to fill in the empty field.
+- Username field prompts the user if username is under 5 characters.
+- Username field does not allow input of over 15 characters.
+- Password field prompts the user if password is under 5 characters.
+- Password field does not allow input of over 15 characters.
+- Both Username and password fields prompt the user to only use letters or numbers if any other characters are entered.
+- When both fields are inputed correctly and the register button is clicked the user is taken to the My List page.
 
+#### My List Page
+
+- If the user has just registered a flash message appears at the top of this page to say registration was successful.
+- Users username is displayed correctly
+- No entries are shown on the page unless they belong to the user
+- If the search button is clicked with an empty field the user is prompted to fill in the field
+- If the user has no entries nothing is returned if the search bar is used
+- Reset search reloads the page if there are no entries available
+- Add to list button take the user to the add to list page
+- If there are entries on the page, the edit button when clicked takes the user to the edit page.
+- If there are entries on the page, the delete button when clicked deleted the entry from the page.
+
+#### Add to list Page
+
+- Text at the top of the page asks the user to add what they have watched and a form is displayed.
+- The title field accepts 1-50 letters or numbers and spaces as expected.
+- If any other character is entered in the title field the user is prompted to use only letters and numbers.
+- The Streaming service field accepts 1-15 letters or numbers and spaces as expected.
+- If any other character is entered in the streaming service field the user is prompted to use only letters and numbers.
+- The Review/notes field accepts 1-250 characters as expected.
+- The rating field only accepts numbers 1-5 as expected.
+- If anything other than the numbers 1-5 is entered into rating the user is prompted.
+- If any field is left blank the user is prompted to fill in the field
+- The add to list button takes the user back to the my list page and presents them with their inputted entry.
+
+#### Edit page
+
+-
 
 
 ## Issues and Bugs
