@@ -112,6 +112,27 @@ The other pages of the website followed the same theme and structure and can be 
 
 ### Manual Testing
 
+Google Developer tools in the chrome broswer was used extensively throughout the project as an efficient error checking method.
+
+Further manual testing was done to ensure each aspect of the application worked as expected.
+
+#### Front/Home Page
+
+- Loaded from the heroku link https://milestone-project-three-shaun.herokuapp.com/
+- Home page appears as expected, the user is presented with:
+  - A Navbar with home button, KaR logo and Log in button
+  - The title of the application
+  - A brief description of the reccommended use of the site
+  - Some examples of what the user can expect from their list
+This page focuses on having an easy to understand site from the start which would tie in with the user story of easily find my way round the site.
+
+#### Register Page
+
+- From the home page the user can go to the log in page.
+- On this log in page the user is asked for a username and pasword
+- Below this is a prompt to Get An Account should the user not already have one, clicking this button with take the user to the register page.
+- 
+
 
 
 ## Issues and Bugs
