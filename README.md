@@ -1,5 +1,14 @@
 # Milestone-Project-Three - Keep A Record
 
+-[Keep A Record](#keep-a-record)
+  -[Description](#description)
+  -[User Design/Experience](#user-design/experience)
+    -[Design](#design)
+    -[User Stories](#user-stories)
+  -[Features](#features)
+    -[Features currently on the site](#features-currently-on-the-site)
+    -[Navigation bar](#navigation-bar)
+    
 ## Description
 
 Keep a record is a site that allows users to sign up, log in and build a list of the programs and movies they have watched on they're favourite streaming services, rate them and write comments or a review.
@@ -27,9 +36,9 @@ The one other color used in the application was gold in an effort to make the si
 
 ## Features
 
-### Features currently on the site:
+### Features currently on the site
 
-#### Navigation bar at the top of the page
+#### Navigation bar
 
 - This contains:
   1. a logo which can route the user to the homepage,
