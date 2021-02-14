@@ -80,6 +80,10 @@ This goal was broken down into User Stories
 - This current data can be added to or changed
 - Once edited the entry can be saved to the list by clicking the Complete Edit button at the bottom of the form.
 
+#### Responsive Design
+
+- The application is able to be used in a web browser on any size device ranging from smartphone to large screens such as desktops.
+
 #### Security
 
 - When the user creates a password it is hashed using a the systems security key, this means that the password created will never appear in the database.
